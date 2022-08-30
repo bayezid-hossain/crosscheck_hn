@@ -13,7 +13,7 @@ const checkValidDriver = async (name, licenseNumber) => {
 
   if (driver && driver.added == false) {
     driver.added = true;
-    driver.save();
+    driver.save({ validateBeforeSave: false });
 
     return true;
   } else return false;

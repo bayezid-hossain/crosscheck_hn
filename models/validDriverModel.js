@@ -24,7 +24,7 @@ const driverSchema = new mongoose.Schema(
       require: [true, 'Please provide License Number'],
       unique: true,
     },
-
+    added: Boolean,
     phone: {
       type: String,
       required: [true, 'Please Enter Your Phone'],

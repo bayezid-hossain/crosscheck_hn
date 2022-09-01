@@ -59,7 +59,7 @@ exports.crossCheckBus = catchAsyncErrors(async (req, res, next) => {
     });
   } else
     res.status(200).json({
-      message: 'Driver not valid or already added',
+      message: 'Bus not valid or already added',
       result: false,
     });
 });

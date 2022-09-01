@@ -3,13 +3,10 @@ const validator = require('validator');
 
 const busSchema = new mongoose.Schema(
   {
-    ownerName: {
-      type: String,
-      require: [true, 'Please enter Driver Name'],
-    },
+    ownerName: String,
     email: String,
-    busNo: Number,
-    engNo: Number,
+    busNo: String,
+    engNo: String,
     ac: Boolean,
     added: Boolean,
     address: String,

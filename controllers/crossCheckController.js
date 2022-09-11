@@ -11,10 +11,7 @@ const checkValidDriver = async (name, licenseNumber) => {
     licenseNo: licenseNumber,
   });
 
-  if (driver && driver.added == false) {
-    driver.added = true;
-    driver.save({ validateBeforeSave: false });
-
+  if (driver) {
     return true;
   } else return false;
 };
@@ -41,10 +38,7 @@ const checkValidBus = async (busNo, engNo, ownerName) => {
     engNo: engNo,
   });
 
-  if (bus && bus.added == false) {
-    bus.added = true;
-    bus.save({ validateBeforeSave: false });
-
+  if (bus) {
     return true;
   } else return false;
 };
